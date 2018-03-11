@@ -10,14 +10,15 @@ puts JSON.pretty_generate(response.body)
 # specific_response = Unirest.get("#{base_url}/contacts/100")
 # puts JSON.pretty_generate(specific_response.body)
 
-# update contact
+# ** update contact
 # input_first_name = "Just"
 # input_last_name = "Working"
 # input_email = "just@example.org"
+# input_phone_number = "8675309"
 
 # update_response = Unirest.patch("#{base_url}/contacts/100", parameters: {first_name: input_first_name, 
 #       last_name: input_last_name, 
-#       email: input_email})
+#       email: input_email, phone_number: input_phone_number})
 
 # puts JSON.pretty_generate(update_response.body)
 
@@ -32,6 +33,6 @@ puts JSON.pretty_generate(response.body)
 
 # create_response = Unirest.post("#{base_url}/contacts", parameters: {first_name: input_first_name, 
 #       last_name: input_last_name, 
-#       email: input_email})
+#       email: input_email, phone_number: input_phone_number})
 
 

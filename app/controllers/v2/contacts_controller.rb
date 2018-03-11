@@ -8,7 +8,8 @@ class V2::ContactsController < ApplicationController
     contact = Contact.new(
       first_name: params[:first_name], 
       last_name: params[:last_name], 
-      email: params[:email]
+      email: params[:email],
+      phone_number: params[:phone_number]
     )
     contact.save
     render json: contact.as_json
@@ -26,7 +27,8 @@ class V2::ContactsController < ApplicationController
     Contact.update(
       first_name: params[:first_name], 
       last_name: params[:last_name], 
-      email: params[:email]
+      email: params[:email], 
+      phone_number: params[:phone_number]
     )
     render json: { message: "The contact was updated."}
   end
